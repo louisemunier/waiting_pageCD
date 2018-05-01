@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    background: url('images/travel.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Comfortaa', cursive, Arial, sans-serif;
+}
+
+
+h1, h2, p, a {
+    font-family: 'Comfortaa', cursive, Arial, sans-serif;
+}
+
+
+#logo {
+    position: relative;
+    z-index: 10;
+    left: 5%;
+    height: 60px;
+    left: 10%;
+    top: 30px;
+}
+
+#left_side {
+    width: 60%;
+    height: 100%;
+    color: white;
+}
+
+#left_side_back {
+    z-index: 1;
+    width: 60%;
+    height: 150%;
+    top: -90px;
+    left: -80px;
+    transform: rotate(7deg);
+    position: fixed;
+    background-color: #323a45;
+    opacity: 0.75;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    padding: 10%;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    opacity: 1;
+    visibility: visible;
+    font-family: 'Comfortaa', cursive, Arial, sans-serif;
+}
+
+#right_side {
+    float: right;
+    width: 40%;
+    height: 100%;
+}
