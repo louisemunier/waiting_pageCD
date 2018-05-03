@@ -1,7 +1,9 @@
 body {
     background-color: black;
-    background: url('images/travel.jpg');
+    background: url('images/travel2.jpg') no-repeat center fixed;
     background-size: cover;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
     margin: 0;
     font-family: 'Comfortaa', cursive, Arial, sans-serif;
 }
@@ -19,6 +21,14 @@ h1, h2, p, a {
     height: 60px;
     left: 10%;
     top: 30px;
+}
+#name {
+    position: relative;
+    z-index: 10;
+    left: 11%;
+    top: 45px;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive, Arial, sans-serif;
 }
 
 #left_side {
@@ -51,8 +61,35 @@ h1, h2, p, a {
     font-family: 'Comfortaa', cursive, Arial, sans-serif;
 }
 
+#social {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    padding: 10%;
+    text-align: left;
+}
+#social img {
+    width: 30px;
+    margin: 0 10px;
+    filter: hue-rotate(60deg);
+}
+#social img:hover {
+    /*fill: orange;
+    stroke: orange;*/
+
+}
+
+
 #right_side {
     float: right;
     width: 40%;
     height: 100%;
+}
+
+/*****MEDIA QUERIES *****/
+@media screen and (max-width: 640px) {
+  .bloc {
+    display:block;
+    clear:both;
+  }
 }
