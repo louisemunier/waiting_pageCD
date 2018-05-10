@@ -138,8 +138,9 @@ h1, h2, p, a {
 }
 
 #content img {
-    width: 30px;
-    margin: 0 7px;
+    width: 40px;
+    margin: 5px;
+    float: left;
 }
 
 
@@ -149,7 +150,7 @@ h1, h2, p, a {
     position: relative;
     z-index: 2;
     width: 90%;
-    padding: 10%;
+    padding: 0 10%;
     text-align: left;
 }
 #social img {
@@ -171,6 +172,28 @@ h1, h2, p, a {
     width: 40%;
     height: 100%;
 }
+
+/***** FOOTER *****/
+footer {
+    color: white;
+    z-index: 3;
+    position: absolute;
+    font-family: 'Comfortaa', cursive, Arial, sans-serif;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 10% 0 0 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #E26207;
+    text-decoration: none;
+}
+
+
+
 
 /*****ANIMATE *****/
 .bounce-in-top {
