@@ -150,8 +150,8 @@ h1, h2, p, a {
     position: relative;
     z-index: 2;
     width: 90%;
-    padding: 0 10%;
     text-align: left;
+    margin: 0 0 0 10%;
 }
 #social img {
     width: 30px;
@@ -181,7 +181,8 @@ footer {
     font-family: 'Comfortaa', cursive, Arial, sans-serif;
     font-size: 0.8em;
     width: 100%;
-    padding: 10% 0 0 0;
+    padding: 0;
+    margin-top: -3%;
 }
 footer a {
     color: white;
@@ -191,7 +192,6 @@ footer a:hover {
     color: #E26207;
     text-decoration: none;
 }
-
 
 
 

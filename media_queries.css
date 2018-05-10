@@ -1,4 +1,4 @@
-@media (max-width: 640px)
+@media (max-width: 768px)
 {
     body::before {
         content: "";
@@ -82,7 +82,14 @@
         text-align: justify;
     }
 
-  /*#f8901fff*/
-  /*E26207*/
-  /*151100*/
+    footer {
+        /*padding-top: 35%;*/
+        /*margin: 0 7%;*/
+        padding: 0;
+    }
+    footer .block-list {
+        display: block;
+        margin: 0 auto;
+    }
+
 }
