@@ -6,6 +6,13 @@ $(document).ready(function() {
     body.height(windowHeight);
     // console.log(windowHeight);
 
+    $('#content button').hover(function() {
+        $(this).find('a').css('color', 'rgba(255, 255, 255, 0.8)');
+    });
+    $('#content button').mouseleave(function() {
+        $(this).find('a').css('color', 'rgba(226,98,7,1)');
+    });
+
     $('#social a.facebook').hover(function() {
         // console.log(this);
         var img = $(this).find('img');
@@ -34,12 +41,23 @@ $(document).ready(function() {
         img.prop('src', 'images/contact.svg');
     });
 
-    $('#content button').hover(function() {
-        $(this).find('span').css('opacity', '0.4')
+    $('#content a.phone').hover(function() {
+        var img = $(this).find('img');
+        img.prop('src', 'images/phone.svg');
+
     });
-    $('#content button').mouseleave(function() {
-        $(this).find('span').css('opacity', '1')
+    $('#content a.phone').mouseleave(function() {
+        // console.log(this);
+        var img = $(this).find('img');
+        img.prop('src', 'images/phone_orange.svg');
     });
+
+    // $('#content button').hover(function() {
+    //     $(this).find('span').css('opacity', '0.4')
+    // });
+    // $('#content button').mouseleave(function() {
+    //     $(this).find('span').css('opacity', '1')
+    // });
 
     // $( "td" ).toggle(
     //     function() {
